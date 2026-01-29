@@ -1,68 +1,65 @@
-📦 Amazon Order Management REST API
+# 📦 Amazon Order Management REST API  
 
-A Spring Boot–based RESTful web service that provides full CRUD (Create, Read, Update, Delete) operations for managing Amazon-style orders. This application demonstrates real-world backend development using Spring Boot, Spring Data JPA, and RESTful API principles.
+A **Spring Boot–based RESTful web service** that provides full **CRUD (Create, Read, Update, Delete)** operations for managing Amazon-style orders. This application demonstrates real-world backend development using **Spring Boot, Spring Data JPA, and RESTful API principles**.
 
-🚀 Features
+---
 
-Create a new order
+## 🚀 Features  
 
-Fetch order by ID
+- Create a new order  
+- Fetch order by ID  
+- Update existing order  
+- Delete an order  
+- RESTful API design  
+- Layered architecture (Controller, Service, Repository)  
+- Uses Spring Data JPA & Hibernate  
+- MySQL database integration  
 
-Update existing order
+---
 
-Delete an order
+## 🛠️ Tech Stack  
 
-RESTful API design
+- Java 17  
+- Spring Boot  
+- Spring Web  
+- Spring Data JPA (Hibernate)  
+- MySQL  
+- Maven  
+- Eclipse IDE  
 
-Layered architecture (Controller, Service, Repository)
+---
 
-Uses Spring Data JPA & Hibernate
+## 📂 Project Structure  
 
-MySQL database integration
-
-🛠️ Tech Stack
-
-Java 17
-
-Spring Boot
-
-Spring Web
-
-Spring Data JPA (Hibernate)
-
-MySQL
-
-Maven
-
-Eclipse IDE
-
-📂 Project Structure
 com.zepto
 │
 ├── controller
-│   └── AmazonController.java
+│ └── AmazonController.java
 │
 ├── entity
-│   └── AmazonEntity.java
+│ └── AmazonEntity.java
 │
 ├── repository
-│   └── AmazonRepository.java
+│ └── AmazonRepository.java
 │
 ├── request
-│   └── AmazonRequest.java
+│ └── AmazonRequest.java
 │
 ├── service
-│   └── AmazonService.java
+│ └── AmazonService.java
 │
 └── AmazonApiApplication.java
 
-📌 API Endpoints
-1️⃣ Save Order
 
-POST /amazon/save
+---
 
-Request Body:
+## 📌 API Endpoints  
 
+### 1️⃣ Save Order  
+**POST** `/amazon/save`  
+
+**Request Body**
+```json
 {
   "itemName": "Laptop",
   "price": 55000,
@@ -74,7 +71,7 @@ Request Body:
 
 GET /amazon/getOrder/{id}
 
-Example:
+Example
 
 /amazon/getOrder/1
 
@@ -82,7 +79,7 @@ Example:
 
 PUT /amazon/updateOrder/{id}
 
-Request Body:
+Request Body
 
 {
   "itemName": "Gaming Mouse",
@@ -95,7 +92,7 @@ Request Body:
 
 DELETE /amazon/deleteOrder/{id}
 
-Example:
+Example
 
 /amazon/deleteOrder/1
 
@@ -113,21 +110,21 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 
 ▶️ How to Run
 
-Clone the repository
+1️⃣ Clone the repository
 
 git clone https://github.com/your-username/amazon-api.git
 
 
-Open in Eclipse
+2️⃣ Open the project in Eclipse
 
-Update database details in application.properties
+3️⃣ Update database details in application.properties
 
-Run
+4️⃣ Run
 
 AmazonApiApplication.java
 
 
-Test APIs using Postman or browser.
+5️⃣ Test APIs using Postman or browser
 
 🎯 Learning Outcomes
 
@@ -146,4 +143,4 @@ Layered architecture
 📌 Author
 
 Anurag
-Java & Spring Boot Developer
+Java & Spring Boot Developer 🚀
